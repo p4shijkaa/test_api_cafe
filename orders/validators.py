@@ -10,7 +10,7 @@ def validate_status_transition(old_status, new_status):
 		)
 
 
-def validate_other_cancelation(status):
+def validate_order_cancelation(status):
 	if status != 'pending':
 		raise ValidationError(
 			"Заказ можно отменить только в статусе 'В обработке'"
